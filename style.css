@@ -1,0 +1,96 @@
+html {
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+section {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    
+}
+
+@media only screen and (max-width: 800px) {
+    main {
+        flex-direction: column;
+        align-content: center;
+      }
+      
+    section {
+      width: 300px;
+      height: 300px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+
+    section {
+      
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+
+
+
+.card:hover button {
+    opacity: 1;
+    cursor: pointer;
+    
+}
+
+button {
+    opacity: 0;
+    position: relative;
+    text-align: center;
+    padding: 0.2em 1.5em;
+    margin-top: 10%;
+    transition: opacity .25s ease-in-out;
+    border: 3px solid;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    
+}
+
+p {
+    visibility: hidden;
+    text-align: center;
+  }
+  
+.show-text p {
+    visibility: visible;
+  }
+
+ 
+  
