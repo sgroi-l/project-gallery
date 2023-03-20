@@ -1,4 +1,4 @@
-# ReadmeFile: Project Galleryt
+# ReadmeFile: Project Gallery
 
 ## Overview
 
@@ -10,9 +10,11 @@ I planned for this page to be clean and simple. A heading with four cards and no
 
 ## Building
 
-The cards were input with HTML, they consist of sections, containing divs and a button. 
+The cards were input with HTML. They consist of sections, containing divs and a button. 
 
 The cards are inside a flexbox which controls the layout of each card on the page. 
+
+I added a background image to each card, and made sure they were displayed correctly and scrolled with the page. I had to crop the background images, as the HD images I used for each project were too large and caused the page to load very slowly.
 
 Media queries are used to keep the page responsive at different screen widths and to ensure that the cards display as a single column on mobile devices.
 
@@ -23,4 +25,4 @@ Each card also links to the project URL when clicked, I added this in JavaScript
 
 ## Debugging
 
-When clicking the 'about' button, the user would be redirected to the project page, I needed to stop this event from firing as otherwise it wouln't be possible to read the description of each project. After learning about event propagation I realised that I could call the `stopPropagation()` method onto the buttons which would stop them sending the 'click' event further up the tree and triggering the cards link.
+When clicking the 'About' button, the user would be redirected to the project page, I needed to stop this event from firing as otherwise it wouln't be possible to read the description of each project. After learning about event propagation I realised that I could call the `stopPropagation()` method on the buttons object which would stop them sending the 'click' event further up the tree and triggering the cards link. I added a line into the loop, which stops the event bubbling up.
