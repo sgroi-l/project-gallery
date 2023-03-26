@@ -2,11 +2,11 @@
 
 ## Overview
 
-This project aims to build a gallery which displays the projects I've been working on.  Using HTML, CSS, and JavaScript. The projects are displayed as cards, and each card has a title and a brief description of the project. The user can click on the 'About' button to see more information about the project. The purpose of this project is to show an understanding of repsonsiveness and layout options.
+This project aims to build a gallery which displays the projects I've been working on.  Using HTML, CSS, and JavaScript. The projects are displayed as cards, and each card has a title and a brief description of the project. The user can click on the 'About' button to see more information about the project. The purpose of this project is to show an understanding of responsiveness  and layout options.
 
 ## Planning
 
-I planned for this page to be clean and simple. A heading with four cards and no unneccesary text or background images. The cards should have some interactivity which will give more information on the project and be clickable to redirect to the project page. 
+I planned for this page to be clean and simple. A heading with four cards and no unnecessary text or background images. The cards should have some interactivity which will give more information on the project and be clickable to redirect to the project page. 
 
 ## Building
 
@@ -25,4 +25,6 @@ Each card also links to the project URL when clicked, I added this in JavaScript
 
 ## Debugging
 
-When clicking the 'About' button, the user would be redirected to the project page, I needed to stop this event from firing as otherwise it wouln't be possible to read the description of each project. After learning about event propagation I realised that I could call the `stopPropagation()` method on the buttons object which would stop them sending the 'click' event further up the tree and triggering the cards link. I added a line into the loop, which stops the event bubbling up.
+I used the W3C validator and other validators to check that the page had valid HTML, CSS and conformed to WCAG 2.1 requirements. 
+
+When clicking the 'About' button, the user would be redirected to the project page, I needed to stop this event from firing as otherwise it wouldn't be possible to read the description of each project. After learning about event propagation I realised that I could call the `stopPropagation()` method on the buttons object which would stop them sending the 'click' event further up the tree and triggering the cards link. I added a line into the loop, which stops the event bubbling up.
